@@ -95,7 +95,7 @@ function App() {
 
   function updateMember(userid, index) {
 
-    fetch(`http://localhost/member_backend/public/api/member/33`, {
+    fetch(`http://localhost/member_backend/public/api/member/${userid}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
