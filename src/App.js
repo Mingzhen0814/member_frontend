@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import React, { useState, useEffect } from "react";
 
 function queryMember() {
-  const ajax = fetch("http://localhost/member0612/public/api/member", {
+  const ajax = fetch("http://localhost/member_backend/public/api/member", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -55,7 +55,7 @@ function App() {
 
   const addMember = () => {
 
-    fetch("http://localhost/member0612/public/api/member", {
+    fetch("http://localhost/member_backend/public/api/member", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -76,7 +76,7 @@ function App() {
   };
 
   const deleteMember = (id) => {
-    fetch(`http://localhost/member0612/public/api/member/${id}`, {
+    fetch(`http://localhost/member_backend/public/api/member/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -95,7 +95,7 @@ function App() {
 
   function updateMember(userid, index) {
 
-    fetch(`http://localhost/member0612/public/api/member/33`, {
+    fetch(`http://localhost/member_backend/public/api/member/33`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
